@@ -80,12 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				D8266A9C24055FD80086F93F /* AppDelegate.swift */,
-				D8266A9E24055FD80086F93F /* SceneDelegate.swift */,
-				D8266AA024055FD80086F93F /* ViewController.swift */,
-				D8266AA224055FD80086F93F /* Main.storyboard */,
-				D8266AA524055FD90086F93F /* Assets.xcassets */,
-				D8266AA724055FD90086F93F /* LaunchScreen.storyboard */,
-				D8266AAA24055FD90086F93F /* Info.plist */,
+				D8266AC12405604F0086F93F /* Models */,
+				D8266AC0240560450086F93F /* ViewModels */,
+				D8266ABF2405603A0086F93F /* Views */,
+				D8266ABE240560230086F93F /* Supporting Files */,
 			);
 			path = "MVVM-Example";
 			sourceTree = "<group>";
@@ -97,6 +95,40 @@
 				D8266AB524055FDA0086F93F /* Info.plist */,
 			);
 			path = "MVVM-ExampleTests";
+			sourceTree = "<group>";
+		};
+		D8266ABE240560230086F93F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8266A9E24055FD80086F93F /* SceneDelegate.swift */,
+				D8266AA224055FD80086F93F /* Main.storyboard */,
+				D8266AA524055FD90086F93F /* Assets.xcassets */,
+				D8266AA724055FD90086F93F /* LaunchScreen.storyboard */,
+				D8266AAA24055FD90086F93F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8266ABF2405603A0086F93F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8266AA024055FD80086F93F /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8266AC0240560450086F93F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D8266AC12405604F0086F93F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2989BGQ2W;
-				INFOPLIST_FILE = "MVVM-Example/Info.plist";
+				INFOPLIST_FILE = "MVVM-Example/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Amr.MVVM-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2989BGQ2W;
-				INFOPLIST_FILE = "MVVM-Example/Info.plist";
+				INFOPLIST_FILE = "MVVM-Example/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Amr.MVVM-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
