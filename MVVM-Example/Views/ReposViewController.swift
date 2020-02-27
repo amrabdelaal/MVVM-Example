@@ -15,7 +15,7 @@ class ReposViewController: UIViewController {
     
     //MARK: - Variables
     var viewModel: ReposViewModel?
-    var repos: [SingleRepoViewModel]? {
+    var repos: [SingleRepoViewModel] = [] {
         didSet{
             self.updateUI()
         }
@@ -45,12 +45,12 @@ class ReposViewController: UIViewController {
 // MARK: - UITableview Datasource and Delegates
 extension ReposViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.repos?.count ?? 0
+        return self.repos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell: RepoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "RepoTableViewCell", for: indexPath) as? RepoTableViewCell {
-            let repo: SingleRepoViewModel = (self.repos?[indexPath.row])! // TODO: Remove force wrapping
+            let repo: SingleRepoViewModel = self.repos[indexPath.row]
             cell.repoName.text = repo.fullName
             cell.lastUpdate.text = repo.updatedAt
             return cell
