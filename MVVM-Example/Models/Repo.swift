@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class ReposItems: Codable {
+    let items: [Repo]
+}
+
+class Repo: Codable {
+    let id: Int
+    let node_id: String
+    let name: String
+    let full_name: String
+    let private: Bool
+    let html_url: String
+    let fork: Bool
+    let updated_at: String
+}

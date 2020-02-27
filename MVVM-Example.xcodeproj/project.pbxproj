@@ -16,6 +16,10 @@
 		D8266AB424055FDA0086F93F /* MVVM_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8266AB324055FDA0086F93F /* MVVM_ExampleTests.swift */; };
 		D845A3352407F2B800B22E14 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A3342407F2B800B22E14 /* ReposViewModel.swift */; };
 		D845A3372407F2C400B22E14 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A3362407F2C400B22E14 /* Repo.swift */; };
+		D845A3392407F76B00B22E14 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A3382407F76B00B22E14 /* RepoTableViewCell.swift */; };
+		D845A33C2407F98B00B22E14 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A33B2407F98B00B22E14 /* DataService.swift */; };
+		D845A33E2407FBC800B22E14 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A33D2407FBC800B22E14 /* Utilities.swift */; };
+		D845A3402408067E00B22E14 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A33F2408067E00B22E14 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		D8266AB524055FDA0086F93F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D845A3342407F2B800B22E14 /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
 		D845A3362407F2C400B22E14 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		D845A3382407F76B00B22E14 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		D845A33B2407F98B00B22E14 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D845A33D2407FBC800B22E14 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		D845A33F2408067E00B22E14 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,7 @@
 			children = (
 				D8266A9C24055FD80086F93F /* AppDelegate.swift */,
 				D8266AC12405604F0086F93F /* Models */,
+				D845A33A2407F97500B22E14 /* Service */,
 				D8266AC0240560450086F93F /* ViewModels */,
 				D8266ABF2405603A0086F93F /* Views */,
 				D8266ABE240560230086F93F /* Supporting Files */,
@@ -109,6 +118,7 @@
 				D8266AA524055FD90086F93F /* Assets.xcassets */,
 				D8266AA724055FD90086F93F /* LaunchScreen.storyboard */,
 				D8266AAA24055FD90086F93F /* Info.plist */,
+				D845A33D2407FBC800B22E14 /* Utilities.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				D8266AA024055FD80086F93F /* ReposViewController.swift */,
+				D845A3382407F76B00B22E14 /* RepoTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 		D8266AC0240560450086F93F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D845A33F2408067E00B22E14 /* Dynamic.swift */,
 				D845A3342407F2B800B22E14 /* ReposViewModel.swift */,
 			);
 			path = ViewModels;
@@ -135,6 +147,14 @@
 				D845A3362407F2C400B22E14 /* Repo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D845A33A2407F97500B22E14 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D845A33B2407F98B00B22E14 /* DataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,10 +259,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D845A3352407F2B800B22E14 /* ReposViewModel.swift in Sources */,
+				D845A33C2407F98B00B22E14 /* DataService.swift in Sources */,
 				D8266AA124055FD80086F93F /* ReposViewController.swift in Sources */,
+				D845A3402408067E00B22E14 /* Dynamic.swift in Sources */,
 				D845A3372407F2C400B22E14 /* Repo.swift in Sources */,
 				D8266A9D24055FD80086F93F /* AppDelegate.swift in Sources */,
 				D8266A9F24055FD80086F93F /* SceneDelegate.swift in Sources */,
+				D845A33E2407FBC800B22E14 /* Utilities.swift in Sources */,
+				D845A3392407F76B00B22E14 /* RepoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

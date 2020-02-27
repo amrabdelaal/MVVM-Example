@@ -10,11 +10,37 @@ import UIKit
 
 class ReposViewController: UIViewController {
 
+    // MARK: - IBOutlets
+    @IBOutlet weak var tableView: UITableView!
+    
+    //MARK: - Variables
+    var viewModel: ReposViewModel?
+    
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.viewModel = ReposViewModel(dataService: DataService())
+        self.viewModel?.getRepos(by: "swift") // TODO: Make Language Searchable
     }
-
 
 }
 
+// MARK: - UITableview Datasource and Delegates
+extension ReposViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell: RepoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "RepoTableViewCell", for: indexPath) as! RepoTableViewCell {
+            
+        }
+        return UITableViewCell()
+    }
+    
+}
+
+extension ReposViewController: UITableViewDelegate {
+    
+}
