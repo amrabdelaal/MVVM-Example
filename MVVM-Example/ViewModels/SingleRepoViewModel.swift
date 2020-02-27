@@ -14,6 +14,6 @@ class SingleRepoViewModel {
     
     init(with repo: Repo) {
         self.fullName = repo.full_name
-        self.updatedAt = repo.updated_at
+        self.updatedAt = Utilities().formateDate(input: repo.updated_at)
     }
 }
