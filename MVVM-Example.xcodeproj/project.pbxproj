@@ -20,6 +20,7 @@
 		D845A33C2407F98B00B22E14 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A33B2407F98B00B22E14 /* DataService.swift */; };
 		D845A33E2407FBC800B22E14 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A33D2407FBC800B22E14 /* Utilities.swift */; };
 		D845A3402408067E00B22E14 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A33F2408067E00B22E14 /* Dynamic.swift */; };
+		D845A34224080D6B00B22E14 /* SingleRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A34124080D6B00B22E14 /* SingleRepoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		D845A33B2407F98B00B22E14 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D845A33D2407FBC800B22E14 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D845A33F2408067E00B22E14 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		D845A34124080D6B00B22E14 /* SingleRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRepoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				D845A33F2408067E00B22E14 /* Dynamic.swift */,
 				D845A3342407F2B800B22E14 /* ReposViewModel.swift */,
+				D845A34124080D6B00B22E14 /* SingleRepoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				D845A3352407F2B800B22E14 /* ReposViewModel.swift in Sources */,
 				D845A33C2407F98B00B22E14 /* DataService.swift in Sources */,
+				D845A34224080D6B00B22E14 /* SingleRepoViewModel.swift in Sources */,
 				D8266AA124055FD80086F93F /* ReposViewController.swift in Sources */,
 				D845A3402408067E00B22E14 /* Dynamic.swift in Sources */,
 				D845A3372407F2C400B22E14 /* Repo.swift in Sources */,

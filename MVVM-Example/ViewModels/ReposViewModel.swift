@@ -14,18 +14,19 @@ class ReposViewModel {
     private var dataService: DataService?
     
     // MARK: - Variables
-    var repos = [Repo]()
+    var repos: Dynamic<[SingleRepoViewModel]>
     
     // MARK: - Intialization
     init(dataService: DataService) {
         self.dataService = dataService
+        self.repos = Dynamic([SingleRepoViewModel]())
     }
     
     // MARK: - Methods
     func getRepos(by language: String) {
-        self.dataService?.getRepos(by: language, success: { (reposResult) in
+        self.dataService?.getRepos(by: language, success: { [weak self] (reposResult) in
             if let reposResult = reposResult {
-                self.repos = reposResult
+                    self?.repos.value = reposResult.map {SingleRepoViewModel(with: $0)}
             }
         }, failure: { (error) in
           // TODO: UI Handeling error

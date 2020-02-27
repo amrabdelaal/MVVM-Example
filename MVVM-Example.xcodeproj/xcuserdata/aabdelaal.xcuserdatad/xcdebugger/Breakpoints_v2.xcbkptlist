@@ -7,16 +7,96 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2CD27ED3-CC56-46F5-9B10-01290B9B3433"
-            shouldBeEnabled = "Yes"
+            uuid = "DF733989-5820-4C66-B2A8-E78F35E3B432"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVVM-Example/ViewModels/ReposViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "getRepos(by:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DF733989-5820-4C66-B2A8-E78F35E3B432 - 12b5f7e9779ed0d6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;MVVM_Example.Repo&gt;&gt;) -&gt; () in MVVM_Example.ReposViewModel.getRepos(by: Swift.String) -&gt; ()"
+                  moduleName = "MVVM-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aabdelaal/Documents/Workspace/iOS/MVVM-Example/MVVM-Example/ViewModels/ReposViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "DF733989-5820-4C66-B2A8-E78F35E3B432 - ba3ecbdbf6303f7a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MVVM_Example.Repo) -&gt; MVVM_Example.SingleRepoViewModel in closure #1 (Swift.Optional&lt;Swift.Array&lt;MVVM_Example.Repo&gt;&gt;) -&gt; () in MVVM_Example.ReposViewModel.getRepos(by: Swift.String) -&gt; ()"
+                  moduleName = "MVVM-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aabdelaal/Documents/Workspace/iOS/MVVM-Example/MVVM-Example/ViewModels/ReposViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A37DF12A-F394-42CD-BA81-0AF8BE6EA183"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Example/Views/ReposViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "updateUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "346D4F6D-B3E9-424F-8A5A-63197C8EE82E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Example/Views/ReposViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D0BCF40C-B2D3-4F04-A1F8-83255FC6B45C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Example/Views/ReposViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
