@@ -11,24 +11,27 @@ import XCTest
 
 class MVVM_ExampleTests: XCTestCase {
 
+    let viewModel: ReposViewModel = ReposViewModel(dataService: FakeDataService())
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.viewModel.getRepos(by: "swift")
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_countOfRepos() {
+        XCTAssertEqual(self.viewModel.repos.value.count, 30)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_wrongCountOfRepos() {
+        XCTAssertNotEqual(self.viewModel.repos.value.count, 2)
+    }
+    
+    func test_firstRepoFullName() {
+        XCTAssertEqual(self.viewModel.repos.value.first?.fullName, "vsouza/awesome-ios")
     }
 
 }

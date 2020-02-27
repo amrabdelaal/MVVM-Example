@@ -21,6 +21,8 @@
 		D845A33E2407FBC800B22E14 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A33D2407FBC800B22E14 /* Utilities.swift */; };
 		D845A3402408067E00B22E14 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A33F2408067E00B22E14 /* Dynamic.swift */; };
 		D845A34224080D6B00B22E14 /* SingleRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A34124080D6B00B22E14 /* SingleRepoViewModel.swift */; };
+		D845A34424085EB500B22E14 /* FakeDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A34324085EB500B22E14 /* FakeDataService.swift */; };
+		D845A3462408604600B22E14 /* ReposMock.json in Resources */ = {isa = PBXBuildFile; fileRef = D845A3452408604600B22E14 /* ReposMock.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		D845A33D2407FBC800B22E14 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D845A33F2408067E00B22E14 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		D845A34124080D6B00B22E14 /* SingleRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRepoViewModel.swift; sourceTree = "<group>"; };
+		D845A34324085EB500B22E14 /* FakeDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataService.swift; sourceTree = "<group>"; };
+		D845A3452408604600B22E14 /* ReposMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReposMock.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +110,9 @@
 		D8266AB224055FDA0086F93F /* MVVM-ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				D845A3452408604600B22E14 /* ReposMock.json */,
 				D8266AB324055FDA0086F93F /* MVVM_ExampleTests.swift */,
+				D845A34324085EB500B22E14 /* FakeDataService.swift */,
 				D8266AB524055FDA0086F93F /* Info.plist */,
 			);
 			path = "MVVM-ExampleTests";
@@ -251,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D845A3462408604600B22E14 /* ReposMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D845A34424085EB500B22E14 /* FakeDataService.swift in Sources */,
 				D8266AB424055FDA0086F93F /* MVVM_ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
