@@ -3,16 +3,14 @@
 //  MVVM-Example
 //
 //  Created by Amr Abdelaal on 27.02.20.
-//  Copyright © 2020 Amr Abdelaal. All rights reserved.
-//
 
 import Foundation
 
-class ReposItems: Codable {
+struct ReposItems: Codable {
     let items: [Repo]
 }
 
-class Repo: Codable {
+struct Repo: Codable {
     let id: Int
     let node_id: String
     let name: String
