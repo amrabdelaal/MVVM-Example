@@ -3,8 +3,7 @@
 //  MVVM-ExampleTests
 //
 //  Created by Amr Abdelaal on 25.02.20.
-//  Copyright © 2020 Amr Abdelaal. All rights reserved.
-//
+
 
 import XCTest
 @testable import MVVM_Example
